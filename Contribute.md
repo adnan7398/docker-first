@@ -15,7 +15,7 @@
 - Install docker 
 - Start postgress 
     -  docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
-- build the images -  `docker build -t user-projects`
+- build the images -  `docker build --network==host -t user-projects`
 - start the image - `docker run -p 3000:3000 user-projects` 
 
 ## docker compose install steps 
